@@ -84,9 +84,8 @@
 
 .ex-10-icon {
     font-size: 60px;
-    animation-name: rotazione;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    animation: rotazione 3s infinite;
+    
 }
 
 @keyframes rotazione{
@@ -106,25 +105,31 @@
     100% {transform: rotate(0deg);}
 }
 
-.ex-12-top-white{
-    position: absolute;
-    top: -10px;
-    left: 10%;
-    background: #f5f5f5;
-    width: 60px;
-    height: 20px;
-    animation: move;
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: move-top;
     animation-duration: 3s;
-    animation-iteration-count: infinite;
+}
+
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: move-bottom;
+    animation-duration: 3s;
 }
 
 
 
+@keyframes move-top{
+    0%{top:-10px; left:10%}
+    50%{top:-10px; left: 60%;}
+    100%{top:-10px; left:10%}
 
-@keyframes move{
-    0% {left: 10%;}
-    50% {left: 60%;}
-    
+}
+
+
+@keyframes move-bottom{
+    0%{bottomo:-10px; right:10%}
+    50%{bottom:-10px; right: 60%;}
+    100%{bottom:-10px; right:20%}
 
 }
 
