@@ -133,3 +133,30 @@
 
 }
 
+.ex-13-button:hover .ex-13-top-white{
+    animation: complete 3s;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: complete-2 3s;
+}
+
+@keyframes complete{
+    0%{top: -10px; left: 10%;}
+    20%{top: -10px; left: 85%;}
+    40%{top: 60px; left: 85%;}
+    80%{top: 60px; left: -10%;}    
+    100%{top:-10px; left: -15%}
+
+}
+
+@keyframes complete-2{
+    0%{bottom: -10px; right: 10%;}
+    20%{bottom: -10px; right: 85%;}
+    40%{bottom: 60px; right: 85%;}
+    80%{bottom: 60px; right: -10%;}    
+    100%{bottom:-10px; right: -15%}
+
+}
+
+
